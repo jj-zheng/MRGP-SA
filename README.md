@@ -1,1 +1,1 @@
-# MRGP-SA
+# mrgp-sa
