@@ -1,0 +1,10 @@
+# G0init (EXP)
+# size 1
+G0init	1	1
+# G1init (Trebuild->enable)
+# size 2
+G1init	1	0
+G1init	2	0
+# G2init (Trecon->enable)
+# size 1
+G2init	1	0

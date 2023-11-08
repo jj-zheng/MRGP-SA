@@ -1,0 +1,22 @@
+# G0G0E G0 to G0
+# size	1	1	0
+# G0G1E G0 to G1
+# size	1	2	1
+G0G1E	1	1	(100*lambda)
+# G1G0P0 G1 to G0
+# size	2	1	1
+G1G0P0	1	1	Trebuild.dist
+# G1G1E G1 to G1
+# size	2	2	1
+G1G1E	1	2	(99*lambda)
+# G1G1P0 G1 to G1
+# size	2	2	1
+G1G1P0	2	1	Trebuild.dist
+# G1G2E G1 to G2
+# size	2	1	1
+G1G2E	2	1	(98*lambda)
+# G2G0P1 G2 to G0
+# size	1	1	1
+G2G0P1	1	1	Trecon.dist
+# G2G2E G2 to G2
+# size	1	1	0

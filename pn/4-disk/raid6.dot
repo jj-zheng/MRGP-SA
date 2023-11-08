@@ -1,0 +1,10 @@
+digraph { layout=dot; overlap=false; splines=true;
+"jspetrinet.marking.MarkGroup@45283ce2" [label = "GEN (Trebuild->enable)"];
+"jspetrinet.marking.MarkGroup@45283ce2" -> "jspetrinet.marking.MarkGroup@45283ce2";
+"jspetrinet.marking.MarkGroup@45283ce2" -> "jspetrinet.marking.MarkGroup@7a4f0f29";
+"jspetrinet.marking.MarkGroup@45283ce2" -> "jspetrinet.marking.MarkGroup@2077d4de";
+"jspetrinet.marking.MarkGroup@7a4f0f29" [label = "GEN (EXP)"];
+"jspetrinet.marking.MarkGroup@7a4f0f29" -> "jspetrinet.marking.MarkGroup@45283ce2";
+"jspetrinet.marking.MarkGroup@2077d4de" [label = "GEN (Trecon->enable)"];
+"jspetrinet.marking.MarkGroup@2077d4de" -> "jspetrinet.marking.MarkGroup@7a4f0f29";
+}

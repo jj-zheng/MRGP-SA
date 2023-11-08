@@ -1,0 +1,12 @@
+set terminal postscript eps enhanced
+set key bottom right
+set grid xtics mxtics
+set grid ytics mytics
+set logscale xy
+set xtics autofreq
+set ytics autofreq
+set yrange [0.99999997:1.0]
+set xlabel "t_1 [hours]"
+set ylabel "Steady-state system availability, A_{RAID}"
+set output "t1ava.eps"
+plot "rest1.txt" using 1:2 w lp lw 3 lt 6 pt 6 notitle

@@ -1,0 +1,17 @@
+set terminal postscript eps enhanced
+set key bottom right
+set grid xtics mxtics
+set grid ytics mytics
+set logscale xy
+set xtics autofreq
+set ytics autofreq
+set yrange [0.985:1.0]
+set xlabel "MTTF of one disk [hours]"
+set ylabel "Steady-state system availability, A_{RAID}"
+set output "ava.eps"
+plot "4res2t1.txt" using 1:2 w lp lw 3 lt 1 pt 1 title "N = 4 (Rebuild: 2 hours)", \
+	"4res24t1.txt" using 1:2 w lp lw 3 lt 2 pt 2 title "N = 4 (Rebuild: 24 hours)", \
+	"10res2t1.txt" using 1:2 w lp lw 3 lt 3 pt 3 title "N = 10 (Rebuild: 2 hours)", \
+	"10res24t1.txt" using 1:2 w lp lw 3 lt 4 pt 4 title "N = 10 (Rebuild: 24 hours)", \
+	"100res2t1.txt" using 1:2 w lp lw 3 lt 5 pt 5 title "N = 100 (Rebuild: 2 hours)", \
+	"100res24t1.txt" using 1:2 w lp lw 3 lt 6 pt 6 title " N = 100 (Rebuild: 24 hours)"
